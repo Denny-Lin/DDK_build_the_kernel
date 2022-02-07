@@ -13,26 +13,29 @@ Unable to find the ncurses package. <br/>
 Install ncurses (ncurses-devel or libncurses-dev depending on your distribution). <br/>
 sudo apt-get install libncurses5-dev libncursesw5-dev  &nbsp;
 
+## Issue
 Command 'gcc' not found, but can be installed with: <br/>
 sudo apt gcc -y &nbsp;
 
+## Issue
 /bin/sh: 1: flex: not found <br/>
 sudo apt-get install flex -y &nbsp;
 
+## Issue
 /bin/sh: 1: bison: not found <br/>
 sudo apt-get install bison -y &nbsp;
 
-cd /home/denny/Desktop/linux &nbsp;
-
 # Method 1
+cd /home/denny/Desktop/linux <br/>
 make ARCH=arm menuconfig <br/>
-save <br/>
-exit &nbsp;
+save & exit &nbsp;
+
 
 ls -al <br/>
 You can see .config has been created. &nbsp;
 
 # Method 2
+cd /home/denny/Desktop/linux <br/>
 make ARCH=arm multi_v7_defconfig &nbsp;
 
 multi_v7_defconfig is from /home/denny/Desktop/linux/arch/arm/ &nbsp;
