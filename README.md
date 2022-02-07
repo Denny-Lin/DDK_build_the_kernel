@@ -62,3 +62,9 @@ It means you should build the arm-cortex_a8-linux-gnueabihf-gcc first. &nbsp;
 ## Issue
 fatal error: gmp.h: No such file or directory <br/>
 sudo apt-get install libgmp-dev -y &nbsp;
+
+
+## Issue
+fatal error: mpc.h: No such file or directory <br/>
+sudo apt-get install libmpc-dev -y &nbsp;
+
