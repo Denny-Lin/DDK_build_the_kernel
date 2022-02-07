@@ -41,6 +41,9 @@ make ARCH=arm multi_v7_defconfig &nbsp;
 
 multi_v7_defconfig is from /home/denny/Desktop/linux/arch/arm/ &nbsp;
 
+ls -al <br/>
+You can see .config has been updated. &nbsp;
+
 # Build the kernel
 make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage &nbsp;
 
