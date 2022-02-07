@@ -1,8 +1,11 @@
 # DDK_build_the_kernel
 Use the cross compiler to build the linux kernel. &nbsp;
 
+Host machine <br/>
 uname -a <br/>
 Linux ubuntu 5.13.0-28-generic #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux &nbsp;
+Target machine <br/>
+arm &nbsp;
 
 # Download the kernel
 cd /home/denny/Desktop <br/>
