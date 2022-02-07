@@ -1,5 +1,5 @@
 # DDK_build_the_kernel
-* Use the cross compiler to build the linux kernel.
+Use the cross compiler to build the linux kernel. &nbsp;
 
 uname -a <br/>
 Linux ubuntu 5.13.0-28-generic #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux &nbsp;
@@ -46,4 +46,4 @@ make[2]: *** [scripts/kconfig/Makefile:77: syncconfig] Error 1 <br/>
 make[1]: *** [Makefile:619: syncconfig] Error 2 <br/>
 make: *** [Makefile:721: include/config/auto.conf.cmd] Error 2 &nbsp;
 
-
+It means you should build the arm-cortex_a8-linux-gnueabihf-gcc first. &nbsp;
