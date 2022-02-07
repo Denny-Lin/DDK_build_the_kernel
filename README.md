@@ -79,6 +79,7 @@ fatal error: openssl/bio.h: No such file or directory <br/>
 sudo apt install libssl-dev -y &nbsp;
 
 # Result
+... <br/>
   LD      vmlinux <br/>
   SYSMAP  System.map <br/>
   SORTTAB vmlinux <br/> <br/>
@@ -105,5 +106,6 @@ sudo apt install libssl-dev -y &nbsp;
   OBJCOPY arch/arm/boot/zImage <br/>
   Kernel: arch/arm/boot/zImage is ready <br/>
 
+## Image path
 /home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
 
