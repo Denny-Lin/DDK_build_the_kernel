@@ -4,6 +4,7 @@ Use the cross compiler to build the linux kernel. &nbsp;
 uname -a <br/>
 Linux ubuntu 5.13.0-28-generic #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux &nbsp;
 
+# Download the kernel
 cd /home/denny/Desktop/ <br/>
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux <br/>
 cd /home/denny/Desktop/linux &nbsp;
@@ -29,7 +30,6 @@ sudo apt-get install bison -y &nbsp;
 cd /home/denny/Desktop/linux <br/>
 make ARCH=arm menuconfig <br/>
 save & exit &nbsp;
-
 
 ls -al <br/>
 You can see .config has been created. &nbsp;
