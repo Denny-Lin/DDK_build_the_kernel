@@ -58,3 +58,7 @@ make[1]: *** [Makefile:619: syncconfig] Error 2 <br/>
 make: *** [Makefile:721: include/config/auto.conf.cmd] Error 2 &nbsp;
 
 It means you should build the arm-cortex_a8-linux-gnueabihf-gcc first. &nbsp;
+
+## Issue
+fatal error: gmp.h: No such file or directory <br/>
+sudo apt-get install libgmp-dev -y &nbsp;
