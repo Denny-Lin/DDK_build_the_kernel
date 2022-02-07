@@ -8,12 +8,13 @@ cd /home/denny/Desktop/ <br/>
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux <br/>
 cd /home/denny/Desktop/linux &nbsp;
 
+## Issue
 Unable to find the ncurses package. <br/>
 Install ncurses (ncurses-devel or libncurses-dev depending on your distribution). <br/>
 sudo apt-get install libncurses5-dev libncursesw5-dev  &nbsp;
 
 Command 'gcc' not found, but can be installed with: <br/>
-sudo apt gcc &nbsp;
+sudo apt gcc -y &nbsp;
 
 /bin/sh: 1: flex: not found <br/>
 sudo apt-get install flex -y &nbsp;
