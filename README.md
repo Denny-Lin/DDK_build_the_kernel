@@ -35,7 +35,7 @@ save & exit &nbsp;
 ls -al <br/>
 You can see .config has been created. &nbsp;
 
-## Method 2 (Made by onthers)
+## Method 2 (Made by others)
 cd /home/denny/Desktop/linux <br/>
 make ARCH=arm multi_v7_defconfig &nbsp;
 
