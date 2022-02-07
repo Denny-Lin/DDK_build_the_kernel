@@ -26,7 +26,8 @@ sudo apt-get install flex -y &nbsp;
 /bin/sh: 1: bison: not found <br/>
 sudo apt-get install bison -y &nbsp;
 
-# Method 1 (Made by yourself)
+# Create the .config
+## Method 1 (Made by yourself)
 cd /home/denny/Desktop/linux <br/>
 make ARCH=arm menuconfig <br/>
 save & exit &nbsp;
@@ -34,7 +35,7 @@ save & exit &nbsp;
 ls -al <br/>
 You can see .config has been created. &nbsp;
 
-# Method 2 (Made by onthers)
+## Method 2 (Made by onthers)
 cd /home/denny/Desktop/linux <br/>
 make ARCH=arm multi_v7_defconfig &nbsp;
 
