@@ -77,3 +77,33 @@ sudo apt-get install libmpc-dev -y &nbsp;
 ## Issue
 fatal error: openssl/bio.h: No such file or directory <br/>
 sudo apt install libssl-dev -y &nbsp;
+
+# Result
+  LD      vmlinux <br/>
+  SYSMAP  System.map <br/>
+  SORTTAB vmlinux <br/> <br/>
+  OBJCOPY arch/arm/boot/Image <br/>
+  Kernel: arch/arm/boot/Image is ready <br/>
+  LDS     arch/arm/boot/compressed/vmlinux.lds <br/>
+  AS      arch/arm/boot/compressed/head.o <br/>
+  GZIP    arch/arm/boot/compressed/piggy_data <br/>
+  CC      arch/arm/boot/compressed/misc.o <br/>
+  CC      arch/arm/boot/compressed/decompress.o <br/>
+  CC      arch/arm/boot/compressed/string.o <br/>
+  AS      arch/arm/boot/compressed/hyp-stub.o <br/>
+  CC      arch/arm/boot/compressed/fdt_rw.o <br/>
+  CC      arch/arm/boot/compressed/fdt_ro.o <br/>
+  CC      arch/arm/boot/compressed/fdt_wip.o <br/>
+  CC      arch/arm/boot/compressed/fdt.o <br/>
+  CC      arch/arm/boot/compressed/atags_to_fdt.o <br/>
+  CC      arch/arm/boot/compressed/fdt_check_mem_start.o <br/>
+  AS      arch/arm/boot/compressed/lib1funcs.o <br/>
+  AS      arch/arm/boot/compressed/ashldi3.o <br/>
+  AS      arch/arm/boot/compressed/bswapsdi2.o <br/>
+  AS      arch/arm/boot/compressed/piggy.o <br/>
+  LD      arch/arm/boot/compressed/vmlinux <br/>
+  OBJCOPY arch/arm/boot/zImage <br/>
+  Kernel: arch/arm/boot/zImage is ready <br/>
+
+/home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
+
