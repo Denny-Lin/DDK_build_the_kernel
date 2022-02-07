@@ -9,22 +9,6 @@ cd /home/denny/Desktop <br/>
 git clone git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git linux <br/>
 cd /home/denny/Desktop/linux &nbsp;
 
-## Issue
-Unable to find the ncurses package. <br/>
-Install ncurses (ncurses-devel or libncurses-dev depending on your distribution). <br/>
-sudo apt-get install libncurses5-dev libncursesw5-dev  &nbsp;
-
-## Issue
-Command 'gcc' not found, but can be installed with: <br/>
-sudo apt gcc -y &nbsp;
-
-## Issue
-/bin/sh: 1: flex: not found <br/>
-sudo apt-get install flex -y &nbsp;
-
-## Issue
-/bin/sh: 1: bison: not found <br/>
-sudo apt-get install bison -y &nbsp;
 
 # Create the .config
 Use "menuconfig", "xxx_defconfig" to generate configuration file. &nbsp;
@@ -45,6 +29,24 @@ multi_v7_defconfig is from /home/denny/Desktop/linux/arch/arm/ &nbsp;
 
 ls -al <br/>
 You can see .config has been updated. &nbsp;
+
+## Issue
+Unable to find the ncurses package. <br/>
+Install ncurses (ncurses-devel or libncurses-dev depending on your distribution). <br/>
+sudo apt-get install libncurses5-dev libncursesw5-dev  &nbsp;
+
+## Issue
+Command 'gcc' not found, but can be installed with: <br/>
+sudo apt gcc -y &nbsp;
+
+## Issue
+/bin/sh: 1: flex: not found <br/>
+sudo apt-get install flex -y &nbsp;
+
+## Issue
+/bin/sh: 1: bison: not found <br/>
+sudo apt-get install bison -y &nbsp;
+
 
 # Build the kernel
 make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage &nbsp;
