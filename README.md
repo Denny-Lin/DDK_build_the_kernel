@@ -43,6 +43,7 @@ multi_v7_defconfig is from /home/denny/Desktop/linux/arch/arm/ &nbsp;
 # Build the kernel
 make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage &nbsp;
 
+## Issue
 /home/denny/Desktop/linux/include/config/auto.conf <br/>
   SYNC    include/config/auto.conf.cmd <br/>
 scripts/Kconfig.include:39: compiler 'arm-cortex_a8-linux-gnueabihf-gcc' not found <br/>
