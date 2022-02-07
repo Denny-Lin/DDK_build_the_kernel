@@ -32,9 +32,9 @@ ls -al <br/>
 You can see .config has been created. &nbsp;
 
 # Method 2
-make ARCH=arm multi_v7_defconfig <br/>
-/home/denny/Desktop/linux/arch/arm/ <br/>
-/home/denny/Desktop/linux/arch/arm/configs/multi_v7_defconfig <br/>
+make ARCH=arm multi_v7_defconfig &nbsp;
+
+multi_v7_defconfig is from /home/denny/Desktop/linux/arch/arm/ &nbsp;
 
 # Build the kernel
 make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabihf- zImage &nbsp;
