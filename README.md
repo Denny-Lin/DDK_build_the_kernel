@@ -2,7 +2,7 @@
 * Use the cross compiler to build the linux kernel.
 
 uname -a <br/>
-Linux ubuntu 5.13.0-28-generic #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux <br/>
+Linux ubuntu 5.13.0-28-generic #31~20.04.1-Ubuntu SMP Wed Jan 19 14:08:10 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
 &nbsp;
 
 Unable to find the ncurses package. <br/>
