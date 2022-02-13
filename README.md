@@ -78,7 +78,7 @@ sudo apt-get install libmpc-dev -y &nbsp;
 fatal error: openssl/bio.h: No such file or directory <br/>
 sudo apt install libssl-dev -y &nbsp;
 
-# Result
+## Result
 ... <br/>
   LD      vmlinux <br/>
   SYSMAP  System.map <br/>
@@ -157,7 +157,7 @@ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabi- INSTALL_MOD_PATH=$
 QEMU_AUDIO_DRV=none \ <br/>
 qemu-system-arm -m 256M -nographic -M vexpress-a9 -kernel /home/denny/Desktop/linux/arch/arm/boot/zImage -dtb /home/denny/Desktop/linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append "console=ttyAMA0" &nbsp;
 
-# Result
+## Result
 ... <br/>
     5.652922] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0) <br/>
 [    5.655824] CPU: 0 PID: 1 Comm: swapper/0 Tainted: G                T 5.17.0-rc2-00316-g0457e5153e0e #1 <br/>
