@@ -109,6 +109,13 @@ sudo apt install libssl-dev -y &nbsp;
 ## Image path
 /home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
 
+# Build the dtbs
+cd ~/Desktop/linux/
+make ARCH=arm CRSS_COMPILE=arm-cortex_a8-linux-gnueabi- dtbs
+
+## dtb path
+/home/denny/Desktop/linux/arch/arm/boot/dts/
+
 # Build the kernel modules
 cd ~/Desktop/linux/
 export PATH=$PATH:/home/denny/x-tools/arm-cortex_a8-linux-gnueabi/bin <br/>
