@@ -165,3 +165,6 @@ qemu-system-arm -m 256M -nographic -M vexpress-a9 -kernel /home/denny/Desktop/li
 [    5.670742] bfe0: 00000000 00000000 00000000 00000000 00000013 00000000 <br/>
 [    5.671793] ---[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0) ]--- &nbsp;
 
+## Issue
+end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0) <br/>
+Because I do not build the root file system here. &nbsp;
