@@ -135,7 +135,7 @@ Initialize kernel stack variables at function entry <br/>
 zero-init everything passed by reference (very strong) (GCC_PLUGIN_STRUCTLEAK_BYREF_ALL) (NEW) <br/>
 4 <br/>
 
-Report forcefully initialized variables (GCC_PLUGIN_STRUCTLEAK_VERBOSE) [N/y/?] (NEW) 
+Report forcefully initialized variables (GCC_PLUGIN_STRUCTLEAK_VERBOSE) [N/y/?] (NEW) <br/>
 y <br/>
 
 Enable register zeroing on function exit (ZERO_CALL_USED_REGS) [N/y/?] (NEW) <br/>
