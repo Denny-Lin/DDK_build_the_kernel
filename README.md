@@ -109,3 +109,40 @@ sudo apt install libssl-dev -y &nbsp;
 ## Image path
 /home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
 
+# Build the kernel modules
+cd ~/Desktop/linux/
+export PATH=$PATH:/home/denny/x-tools/arm-cortex_a8-linux-gnueabi/bin <br/>
+
+make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabi- modules <br/>
+
+Use a unique stack canary value for each task (STACKPROTECTOR_PER_TASK) [Y/n/?] (NEW) <br/>
+y <br/>
+
+GCC plugins (GCC_PLUGINS) [Y/n/?] (NEW) <br/>
+https://zhuanlan.zhihu.com/p/49490338 <br/>
+y <br/>
+
+Generate some entropy during boot and runtime (GCC_PLUGIN_LATENT_ENTROPY) [N/y/?] (NEW) <br/>
+y <br/>
+
+Randomize layout of sensitive kernel structures (GCC_PLUGIN_RANDSTRUCT) [N/y/?] (NEW) <br/>  
+y <br/>
+
+Use cacheline-aware structure randomization (GCC_PLUGIN_RANDSTRUCT_PERFORMANCE) [N/y/?] (NEW) <br/>
+y <br/>
+
+Initialize kernel stack variables at function entry <br/>
+zero-init everything passed by reference (very strong) (GCC_PLUGIN_STRUCTLEAK_BYREF_ALL) (NEW) <br/>
+4 <br/>
+
+Report forcefully initialized variables (GCC_PLUGIN_STRUCTLEAK_VERBOSE) [N/y/?] (NEW) 
+y <br/>
+
+Enable register zeroing on function exit (ZERO_CALL_USED_REGS) [N/y/?] (NEW) <br/>
+y <br/>
+
+make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabi- INSTALL_MOD_PATH=$HOME/rootfs modules_install &nbsp;
+
+# Use QEMU to run and test the kernel
+QEMU_AUDIO_DRV=none \ <br/>
+qemu-system-arm -m 256M -nographic -M vexpress-a9 -kernel /home/denny/Desktop/linux/arch/arm/boot/zImage -dtb /home/denny/Desktop/linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append "console=ttyAMA0" &nbsp;
