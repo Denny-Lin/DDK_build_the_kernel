@@ -120,7 +120,7 @@ uImage <br/>
 cd ~/Desktop/linux/ <br/>
 make ARCH=arm CRSS_COMPILE=arm-cortex_a8-linux-gnueabi- dtbs &nbsp;
 
-## dtb path
+## dtb&dts path
 /home/denny/Desktop/linux/arch/arm/boot/dts/
 
 # Build the kernel modules
