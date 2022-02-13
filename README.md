@@ -110,8 +110,8 @@ sudo apt install libssl-dev -y &nbsp;
 /home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
 
 # Build the dtbs
-cd ~/Desktop/linux/
-make ARCH=arm CRSS_COMPILE=arm-cortex_a8-linux-gnueabi- dtbs
+cd ~/Desktop/linux/ <br/>
+make ARCH=arm CRSS_COMPILE=arm-cortex_a8-linux-gnueabi- dtbs &nbsp;
 
 ## dtb path
 /home/denny/Desktop/linux/arch/arm/boot/dts/
