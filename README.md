@@ -107,7 +107,14 @@ sudo apt install libssl-dev -y &nbsp;
   Kernel: arch/arm/boot/zImage is ready <br/>
 
 ## Image path
+vmlinux <br/>
+/home/denny/Desktop/linux/ &nbsp;
+
+zImage <br/>
 /home/denny/Desktop/linux/arch/arm/boot/zImage &nbsp;
+
+uImage <br/>
+... &nbsp;
 
 # Build the dtbs
 cd ~/Desktop/linux/ <br/>
