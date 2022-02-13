@@ -146,3 +146,22 @@ make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabi- INSTALL_MOD_PATH=$
 # Use QEMU to run and test the kernel
 QEMU_AUDIO_DRV=none \ <br/>
 qemu-system-arm -m 256M -nographic -M vexpress-a9 -kernel /home/denny/Desktop/linux/arch/arm/boot/zImage -dtb /home/denny/Desktop/linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append "console=ttyAMA0" &nbsp;
+
+# Result
+... <br/>
+    5.652922] Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0) <br/>
+[    5.655824] CPU: 0 PID: 1 Comm: swapper/0 Tainted: G                T 5.17.0-rc2-00316-g0457e5153e0e #1 <br/>
+[    5.656898] Hardware name: ARM-Versatile Express <br/>
+[    5.657703]  unwind_backtrace from show_stack+0x10/0x28 <br/>
+[    5.663766]  show_stack from dump_stack_lvl+0x40/0x60 <br/>
+[    5.664557]  dump_stack_lvl from panic+0xe8/0x2fc <br/>
+[    5.664818]  panic from mount_block_root+0x2a4/0x384 <br/>
+[    5.665608]  mount_block_root from prepare_namespace+0x270/0x2b8 <br/>
+[    5.667165]  prepare_namespace from kernel_init+0x18/0x140 <br/>
+[    5.667887]  kernel_init from ret_from_fork+0x14/0x2c <br/>
+[    5.668358] Exception stack(0xc209bfb0 to 0xc209bff8) <br/>
+[    5.668948] bfa0:                                     00000000 00000000 00000000 00000000 <br/>
+[    5.670084] bfc0: 00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000 <br/>
+[    5.670742] bfe0: 00000000 00000000 00000000 00000000 00000013 00000000 <br/>
+[    5.671793] ---[ end Kernel panic - not syncing: VFS: Unable to mount root fs on unknown-block(0,0) ]--- &nbsp;
+
