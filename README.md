@@ -150,6 +150,9 @@ y <br/>
 
 make -j 4 ARCH=arm CROSS_COMPILE=arm-cortex_a8-linux-gnueabi- INSTALL_MOD_PATH=$HOME/rootfs modules_install &nbsp;
 
+## Kernel modules path
+ &nbsp;
+
 # Use QEMU to run and test the kernel
 QEMU_AUDIO_DRV=none \ <br/>
 qemu-system-arm -m 256M -nographic -M vexpress-a9 -kernel /home/denny/Desktop/linux/arch/arm/boot/zImage -dtb /home/denny/Desktop/linux/arch/arm/boot/dts/vexpress-v2p-ca9.dtb -append "console=ttyAMA0" &nbsp;
